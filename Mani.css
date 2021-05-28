@@ -1,0 +1,175 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.searchBtnText {
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5vh 2vh;
+}
+
+.searchBtnText:hover, .active > .searchBtnText {
+    padding: 0.5vh 2vh;
+    background-color: #4e51bf !important;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #4e51bf !important;
+}
+
+.social i {
+    font-size: 5rem;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+/*x-small*/
+@media (max-width: 576px) {
+    .card {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+
+/*small*/
+@media (min-width: 576px) {
+    .social i {
+        font-size: 5.5rem;
+    }
+
+    .card {
+        width: calc(538px / 2);
+    }
+}
+
+/*medium*/
+@media (min-width: 768px) {
+    .social i {
+        font-size: 6rem;
+    }
+
+    .card {
+        width: calc(718px / 3);
+    }
+}
+
+/*large*/
+@media (min-width: 992px) {
+    .social i {
+        font-size: 7rem;
+    }
+
+    .navButton {
+        font-size: 1.1rem;
+    }
+
+    .searchBarNav {
+        font-size: 1.3vm;
+    }
+
+    .card {
+        width: calc(958px / 4);
+    }
+}
+
+/*x-large*/
+@media (min-width: 1200px) {
+    .card {
+        width: calc(1138px / 5);
+    }
+}
+
+/*xx-large*/
+@media (min-width: 1400px) {
+    .card {
+        width: calc(1318px / 5);
+    }
+}
+
+h2 {
+    font-family: 'Oswald', serif;
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.card > .btn {
+    background-color: #4e51bf !important;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    transform: translate(-1%, -0.5%);
+    box-shadow: 0 0 5px grey;
+    color: #4e51bf !important;
+}
+
+.card p {
+    color: black !important;
+}
+
+.group:hover {
+    cursor: pointer;
+}
+
+.seeMore {
+    margin-left: 1%;
+    font-size: 60%;
+    font-family: "Arial Narrow", sans-serif;
+    font-weight: bold;
+}
+
+.seeMore:hover {
+    cursor: pointer;
+    color: #4E51BFFF;
+}
+
+footer {
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    background: #24252a;
+    margin-top: 50px;
+    color: whitesmoke;
+    padding: 3rem 0 1rem 0;
+
+}
+
+.footer-container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.items h3 {
+    display:block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.itemsbm h3 {
+    display: block;
+    margin: 2rem 0 0.7rem 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.items h3 span {
+    padding-bottom: 0.2rem;
+    border-bottom: 0.2rem solid white;
+}
+
+.itemsbm p {
+    display: block;
+    line-height: 1.6rem;
+    margin: 0;
+    font-size: 17px;
+}
+
+hr {
+    opacity: .3;
+}
