@@ -1,11 +1,22 @@
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #FAFAFA;
+}
+
+#topLogo {
+    padding: 1%;
+    max-height: 7vh;
 }
 
 .searchBtnText {
+    /*letter-spacing: 1px;*/
     color: white;
     text-transform: uppercase;
     padding: 0.5vh 2vh;
+}
+
+.navbar-toggler:focus {
+    outline: none;
 }
 
 .searchBtnText:hover, .active > .searchBtnText {
@@ -18,12 +29,6 @@ body {
 #searchBtn:hover {
     background-color: #4e51bf !important;
 }
-
-.social i {
-    font-size: 5rem;
-    margin: 0 0.5rem 0.5rem 0.5rem;
-}
-
 
 h2 {
     font-family: 'Oswald', serif;
@@ -49,9 +54,44 @@ h2 {
     box-shadow: 0 0 5px grey;
 }
 
+/*carousel*/
+.carousel-item {
+    padding: 0 1.5%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/> </svg>');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml, <svg xmlns= "http://www.w3.org/2000/svg" width= "16" height= "16" fill= "currentColor" class= "bi bi-chevron-right" viewBox= "0 0 16 16" > <path fill-rule= "evenodd" d= "M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" /> </svg>');
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: auto !important;
+}
+
 /*card*/
+.card {
+    width: 22%;
+    margin: 2% 0 2% 2.35%;
+    background-color: #EAEDED;
+}
+
+.card ul li {
+    background-color: #EAEDED;
+}
+
+.card-image {
+    border-bottom: 1px solid grey !important;
+}
+
 .card > .btn {
     background-color: #4e51bf !important;
+}
+
+.card p {
+    color: black !important;
 }
 
 .card:hover {
@@ -62,8 +102,8 @@ h2 {
     color: #4e51bf !important;
 }
 
-.card p {
-    color: black !important;
+.card ul li .price {
+    font-weight: bold;
 }
 
 /*footer*/
@@ -71,9 +111,9 @@ footer {
     font-family: Roboto, sans-serif;
     line-height: 1.5;
     background: #24252a;
-    margin-top: 50px;
+    margin-top: 20px;
     color: whitesmoke;
-    padding: 3rem 0 1rem 0;
+    padding: 0.8rem 0 1rem 0;
 
 }
 
@@ -82,13 +122,8 @@ footer {
     margin: 0 auto;
 }
 
-.items h3 {
-    display:block;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-bottom: 1.3rem;
-    color: whitesmoke;
-    text-transform: uppercase;
+.itemsbm {
+    margin-bottom: 1rem;
 }
 
 .itemsbm h3 {
@@ -120,10 +155,10 @@ hr {
         padding: 0.1rem 0.5rem;
     }
 
-    .card {
-        width: 90%;
-        margin: 0 5%;
-    }
+    /*.card {*/
+    /*    width: 90%;*/
+    /*    margin: 0 5%;*/
+    /*}*/
 }
 
 /*small*/
@@ -132,55 +167,52 @@ hr {
         font-size: 2rem;
     }
 
-    .social i {
-        font-size: 5.5rem;
-    }
-
-    .card {
-        width: calc(538px / 2);
-    }
+    /*.card {*/
+    /*    width: calc(538px / 2);*/
+    /*}*/
 }
 
 /*medium*/
 @media (min-width: 768px) {
-    .social i {
-        font-size: 6rem;
-    }
+    /*.card {*/
+    /*    width: calc(718px / 3);*/
+    /*}*/
 
-    .card {
-        width: calc(718px / 3);
+    #productsBar {
+        margin-top: 14vh !important;
     }
 }
 
 /*large*/
 @media (min-width: 992px) {
-    .social i {
-        font-size: 7rem;
-    }
-
-    .navButton {
-        font-size: 1.1rem;
-    }
 
     .searchBarNav {
         font-size: 1.3vm;
     }
 
-    .card {
-        width: calc(958px / 4);
-    }
+    /*.card {*/
+    /*    width: calc(958px / 4);*/
+    /*}*/
 }
 
 /*x-large*/
 @media (min-width: 1200px) {
-    .card {
-        width: calc(1138px / 5);
+    /*.card {*/
+    /*    width: calc(1138px / 5);*/
+    /*}*/
+
+    #productsBar {
+        margin-top: 10vh !important;
     }
 }
 
 /*xx-large*/
 @media (min-width: 1400px) {
-    .card {
-        width: calc(1318px / 5);
+    .navButton {
+        font-size: 1.1rem;
     }
+
+    /*.card {*/
+    /*    width: calc(1318px / 4);*/
+    /*}*/
 }
